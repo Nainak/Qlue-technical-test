@@ -1,0 +1,283 @@
+Quality Assurance is a broad term, “the continuous and consistent improvement and maintenance of process that enables the QC job”. As follows from the definition, QA focuses more on organizational aspects of quality management, monitoring the consistency of the production process.
+Through Quality Control the team verifies the product’s compliance with the functional requirements. It is a “process through which a business seeks to ensure that product quality is maintained or improved and manufacturing errors are reduced or eliminated”. This activity is applied to the finished product and performed before the product release. In terms of manufacturing industry, it is similar to pulling a random item from an assembly line to see if it complies with the technical specs.
+Testing is the basic activity aimed at detecting and solving technical issues in the software source code and assessing the overall product usability, performance, security, and compatibility. It has a very narrow focus and is performed by the test engineers in parallel with the development process or at the dedicated testing stage (depending on the methodological approach to the software development cycle).
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+Software Testing Life Cycle (STLC) is the testing process which is executed in systematic and planned manner. In STLC process, different activities are carried  out to improve the quality of the product. Let’s quickly see what all stages are involved in typical Software Testing Life Cycle (STLC).
+Following steps are involved in Software Testing Life Cycle (STLC). Each step is have its own Entry Criteria and deliverable.
+•	Requirement Analysis
+•	Test Planning
+•	Test Case Development
+•	Environment Setup
+•	Test Execution
+•	Test Cycle Closure
+Ideally, the next step is based on previous step or we can say next step cannot be started unless and until previous step is completed. It is possible in the ideal situation, but practically it is not always true.
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Use a Strong Title
+A good test case starts with a strong title. As a best practice, it’s good to name the test case along the same lines as the module that you are testing. For example, if you’re testing the login page, include “Login Page” in the title of the test case.
+Include a Strong Description
+The description should tell the tester what they’re going to test and include any other pertinent information such as the test environment, test data, and preconditions/assumptions.
+Include Assumptions and Preconditions
+You should include any assumptions that apply to the test and any preconditions that must be met prior to the test being executed. This information can include which page the user should start the test on, dependencies on the test environment, and any special setup requirements that must be done before running the test. This information also helps keep the test steps short and concise.
+Keep the Test Steps Clear and Concise
+The test steps should include the data and information on how to execute the test. This is perhaps the most important part of a test case.  Keep this section clear and concise, but don’t leave out any necessary details.
+Include the Expected result
+The expected result tells the tester what they should experience as a result of the test steps. This is how the tester determines if the test case is a “pass” or “fail”.
+Make it Reusable
+A good test case is reusable and provides long-term value to the software testing team. When writing a test case, keep this in mind.  You can save time down the road by re-using the test case instead of re-writing it.
+-----------------------------------------------------------------------------------------------------------------------------------------
+You start to analyze what would be the impact regarding change. So you know the scope to be covered.
+
+Out of the large number of Test Cases, you must be able to prioritize test cases as not all of them will have same priority. You may end up with High Priority, Medium Priority, and Low Priority set of Test Cases.
+
+You might want to execute all the Test Cases but it will not be possible in this situation where there are time and resource constraints.
+
+You do the estimation of the time and effort need to perform each set of Test Cases. Then there will be few scenarios:
+
+If you have time to cover High and Medium Priority. It’s good news.
+If you have time to cover only High Priority. It’s still fine.
+If you don’t even have time to cover High Priority, you need to discuss with PM, Test Manager, Delivery Manager, or anyone who need to make decision about release to communicate that you really need time to at least finish the Test Execution for High Priority Test Cases. Otherwise there is the risk that main functionality will not working properly and will impact production environment when deploy.
+If they are insist to go ahead with same time line then you already did your job to provide information and what will be happen is the responsibility of the whole team
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Negative Testing is a variant of testing that can be performed on the system by providing invalid data as input. It checks whether an application behaves as expected with the negative inputs. This is to test the application does not do anything that it is not supposed to do so.
+Example - Enter characters when the validation says Enter only numbers
+Negative testing can be performed by entering characters A to Z or from a to z. Either software system should not accept the values or else it should throw an error message for these invalid data inputs.
+On the other hand positive is opposite to negative.
+Positive testing is the type of testing that can be performed on the system by providing the valid data as input. It checks whether an application behaves as expected with positive inputs. This test is done to check the application that does what it is supposed to do.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+To ensure complete coverage of software testing, testing team must be careful about certain activities that are part of the process. If the software testing is not complete as per the business and customer requirements, it could have a severe adverse effect during or post implementation of the software at the customer site. The more is the coverage, the less are the chances of any bugs passing to the implementation phase. So, to ensure the complete coverage of software product and to find the maximum possible bugs or defects, testers have to ensure following steps:
+1.	Ensure that the documents defining the business and customer requirements are complete and correct. How to do that can be taken up in a separate topic.
+2.	Ensure that the development team has clearly understood the documents.
+3.	Ensure that testers themselves have thoroughly read and understood the documents.
+4.	Prepare a clear cut scope of testing based on product documents.
+5.	The strategy and Test Planning is as per system requirements.
+6.	Decide test methodology and test tools (if any), and test schedule.
+7.	Prepare Test Cases based on business rules and customer requirements.
+8.	Ensure that the test cases are extensive and sensible to cover the complete requirements testing.
+9.	Ensure that during testing no changes in the test environment (coding etc.) is done by development team.
+10.	Ensure that development team representatives (1 or all) are present during the complete testing.
+11.	Create Test Scenarios based on test cases.
+12.	Observe the result of each test case and record it accordingly.
+13.	Prepare a comprehensive and detailed test report explaining each of the test case, scenario and its result elaborately.
+14.	Ensure that all bugs reported should make sense (no duplication/overlapping of scenarios and no repetition of bugs reported)
+15.	Ensure that the complete testing finishes as per schedule.
+16.	The final report submitted should clearly state the areas not covered under testing, reason for the same and its impact on the product.
+17.	Simulate any bugs that are not clear to development team.
+18.	Ensure that you have a tentative plan from the development team when they are fixing all bugs and submitting it back to testing team.
+19.	Verify all bugs fixed and ensure that the development team is sitting with testers during verification.
+20.	Prepare the final report and submit back to Development team, giving the status of each bug fixed, as verified as fixed or not fixed. Report any new bugs arrived in the software while fixing these bugs.
+
+--------------------------------------------------------------------------------------------------------------------------------------
+Following are the artifacts to start testing process-
+1).Business Requirement
+2).Test Scenarios
+3).Test Plan
+4).Requirement traceability matrix.
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Regression tests are done by running all the functional and non functional again , just to be sure and check that any change in code or bug fix has not damaged or broken the existing functionality.
+---------------------------------------------------------------------------------------------------------------------------------------
+
+I have used Selenium webdriver more as compared to other tools. I have evenused VSTS using TFS. Automation tools are used to automate the functional features of a project/product. They are used after the manual testing is done to run the process automatically next time.
+----------------------------------------------------------------------------------------------------------------------------------------
+
+Automation Test-
+1) The website should render perfectly in Chrome Browser - 
+
+package Firstpackageselnium;
+
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
+
+public class Logindet 
+ {
+	public void LoginDetail()
+	{
+		WebDriver driver = new ChromeDriver();
+		try 
+		{
+		
+			driver.get(" http://qlue.co.id");
+			driver.manage().window().maximize();
+      }
+      catch(Exception exe)
+		{
+			System.out.println("This is an exception");
+			
+		}
+		finally
+		{
+			driver.close();
+			
+			
+		}
+ ------------------------------------------------------------------------------------------------------------------------------------
+ 2).The website should render six menus -
+ 
+ package Firstpackageselnium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Jmenus 
+{
+	public static void main(String[] args) {
+
+
+
+		//public void login() {
+		WebDriver driver = new chromeDriver();
+try
+{
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.get(" http://qlue.co.id ");
+		driver.findElement((By.xpath("home"));
+    driver.findElement((By.xpath(" about us"));
+    driver.findElement((By.xpath("projects"));
+    driver.findElement((By.xpath(" city partners"));
+    driver.findElement((By.xpath("alliances"));
+    driver.findElement((By.xpath(" we’re hiring"));
+//Check by hover over the mouse on each one of them.
+Actions builder = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("1");
+          driver.click(locator);
+Actions builder1 = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("2");
+          driver.click(locator);
+          //Till all 6 features on menu...........................................
+catch(Exception exe)
+		{
+			//System.out.println("There is an exception");
+			exe.printStackTrace();
+		}
+			finally 
+			{
+			driver.close();
+			}
+      
+---------------------------------------------------------------------------------------------------------------------------------------
+3). The website should render products page with three products displayed (Qlue x MyCity, QlueWork, QlueVision)
+when user click Projects menu-
+
+package Firstpackageselnium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Jmenus 
+{
+	public static void main(String[] args) {
+
+
+
+		//public void login() {
+		WebDriver driver = new chromeDriver();
+try
+{
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.get(" http://qlue.co.id ");
+    driver.findElement((By.xpath("projects")).click(); //it will open the menu option
+   
+//Check by hover over the mouse on each one of them.
+Actions builder = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("Qlue x MyCity");
+          driver.click(locator);
+Actions builder1 = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("QlueWork");
+          driver.click(locator);
+Actions builder1 = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("QlueVision");
+          driver.click(locator);
+          
+catch(Exception exe)
+		{
+			//System.out.println("There is an exception");
+			exe.printStackTrace();
+		}
+			finally 
+			{
+			driver.close();
+			}
+---------------------------------------------------------------------------------------------------------------------------------------
+4). The website should have address “Jalan Pejaten Barat No. 13, RT.1/RW.8, Pejaten Barat, Pasar Minggu, Kota
+Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510” in all pages
+
+package Firstpackageselnium;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Jmenus 
+{
+	public static void main(String[] args) {
+
+
+
+		//public void login() {
+		WebDriver driver = new chromeDriver();
+try
+{
+		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		driver.get(" http://qlue.co.id ");
+    driver.findElement((By.xpath("adress")); //it will open the menu option
+   
+//Check by hover over the mouse on each one of them.
+Actions builder = new Actions(driver);
+            builder.moveToElement(hoverElement).perform();
+            By locator = By.id("adress");
+          driver.click(locator);
+
+driver.findElement(By.xpath("//input[@id = 'id fro adress']"));
+			String expected = driver.findElement(By.id("adress")).getText();
+			if(expected.equals("“Jalan Pejaten Barat No. 13, RT.1/RW.8, Pejaten Barat, Pasar Minggu, Kota
+Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510"))
+			{
+			System.out.println(expected +" is the adress "); 
+			}
+			else
+			{
+			System.out.println(expected +" is not the correct adress ");
+			}
+
+			Thread.sleep(5000);
+      
+      //switch page by clicking on the menu and apply same code on all pages as shown below-
+      
+driver.get(" http://qlue.co.id ");
+    driver.findElement((By.xpath("projects")).click;
+    
+    //Reached on another page by clicking-may be need to change the frame-
+    driver.switchTo().frame("page2");
+    
+    driver.findElement(By.xpath("//input[@id = 'id fro adress']"));
+			String expected = driver.findElement(By.id("adress")).getText();
+			if(expected.equals("“Jalan Pejaten Barat No. 13, RT.1/RW.8, Pejaten Barat, Pasar Minggu, Kota
+Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12510"))
+			{
+			System.out.println(expected +" is the adress "); 
+			}
+			else
+			{
+			System.out.println(expected +" is not the correct adress ");
+			}
+
+			Thread.sleep(5000);
+    
